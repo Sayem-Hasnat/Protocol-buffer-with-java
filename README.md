@@ -82,14 +82,14 @@ necessary dependencies in pom file :
                     <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.java.version}:exe:linux-x86_64</pluginArtifact>
                 </configuration>
 
-<!--                <configuration>
+    <!--                <configuration>
                      <!-- protocol's configuration for windows-->
                     <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:win32-x86_64</protocArtifact>
                     <pluginId>grpc-java</pluginId>
                     <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.java.version}:exe:win32-x86_64</pluginArtifact>
                 </configuration>-->
 
-<!--                <configuration>
+    <!--                <configuration>
                      <!-- protocol's configuration for macOS-->
                     <protocArtifact>com.google.protobuf:protoc:${protobuf.version}:exe:osx-x86_64</protocArtifact>
                     <pluginId>grpc-java</pluginId>

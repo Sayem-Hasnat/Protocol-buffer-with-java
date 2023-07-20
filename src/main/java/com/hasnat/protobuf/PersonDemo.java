@@ -17,15 +17,12 @@ public class PersonDemo {
                 .build();
 */
         Path path = Paths.get("sam.ser");
-       // Files.write(path, sam.toByteArray());
+        // Files.write(path, sam.toByteArray());
 
         byte[] bytes = Files.readAllBytes(path);
         Person newSam = Person.parseFrom(bytes);
 
-        System.out.println(
-                newSam
-        );
-
+        System.out.println(newSam);
     }
 
 }

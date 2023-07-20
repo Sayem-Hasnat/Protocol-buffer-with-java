@@ -11,8 +11,8 @@ public class VersionCompatibilityTest {
 
     public static void main(String[] args) throws IOException {
 
-        Path pathV1 =  Paths.get("tv-v1");
-        Path pathV2 =  Paths.get("tv-v2");
+        Path pathV1 = Paths.get("tv-v1");
+        Path pathV2 = Paths.get("tv-v2");
 
        /* Television television = Television.newBuilder()
                 .setBrand("sony")
@@ -22,14 +22,14 @@ public class VersionCompatibilityTest {
 
         Files.write(pathV2, television.toByteArray());*/
 
-        //
         byte[] bytes = Files.readAllBytes(pathV1);
-        System.out.println(
-                Television.parseFrom(bytes).getPrice()
-        );
-
-
+        System.out.println(Television.parseFrom(bytes).getPrice());
     }
-
-
 }
+
+
+/*
+ * If Proto-file compiled then field value is stored as per field number.
+ * so if field of variable shouldn't be changed or shouldn't use deprecated field number
+ * */
+

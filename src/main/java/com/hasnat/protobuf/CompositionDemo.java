@@ -42,8 +42,5 @@ public class CompositionDemo {
         System.out.println(
                 sam
         );
-
-
     }
-
 }

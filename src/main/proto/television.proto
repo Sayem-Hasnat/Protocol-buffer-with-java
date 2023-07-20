@@ -19,13 +19,17 @@ message Television {
   int32 model = 2;
   Type type = 3;
 }*/
-
 // v4
 message Television {
   string brand = 1;
 
   reserved 2;
   reserved "year", "model";
+
+  /*
+* If Proto-file compiled then field value is stored as per field number.
+* so if field of variable shouldn't be changed or shouldn't use deprecated field number
+* */
 
   int32 price = 4;
   Type type = 3;
